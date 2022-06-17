@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    padding: 0 0 0 2rem;
+}
+
+body {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.card .column {
+    padding: 1.50rem;
+    max-height: 500px;
+}
+
+.column:nth-child(1) {
+    background-color: #e38826;
+    border-radius: 10px 0 0 10px;
+}
+
+.column:nth-child(1) button {
+    color: #e38826;
+}
+
+.column:nth-child(2) {
+    background-color: #006970;
+}
+
+.column:nth-child(2) button {
+    color: #006970;
+}
+
+.column:nth-child(3) {
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+}
+
+.column:nth-child(3) {
+    color: #004241;
+}
+
+.column img {
+    padding: 1rem 0;
+}
+
+.column p {
+    color: #ffffffbf;
+    font-size: 15px;
+}
+
+.column .title {
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1rem 0;
+}
+
+.column .text {
+    max-width: 200px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    padding: 1rem 0;
+    color: #ffffffbf;
+}
+
+.column button {
+    margin: 2.25rem 0 0.25rem 0;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: transparent;
+    font-family: "Lexend Deca",
+        sans-serif;
+    font-weight: 400;
+    font-size: inherit;
+}
+
+.column button:active {
+    background-color: transparent;
+    border: 2px solid;
+    color: #ffffffbf;
+}
+
+@media screen and (max-width: 560px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .column:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .column:nth-child(3) {
+        border-radius: 0 0 10px 10px;
+    }
+}
